@@ -19,8 +19,8 @@ header .head-scroll{
   width: 100%;
   height: 70px;
   background-color: whitesmoke;
-  
-  
+  position: fixed;
+  z-index: 99;
 }
 
 header .head-interact{
@@ -64,42 +64,60 @@ header .menu-2 ul li:last-child{
 
 .jumbo{
   padding-top: 70px;
+  height: 70vh;
+  background-color: rgb(155, 185, 241);
 }
 
 .jumbo .container{
-  margin: 0 auto;
-  padding: 100px 300px;
+  height: 70px;
+  background-color: bisque;
+  border: 1px solid blue;
+  margin: 50px 300px;
 }
 
 .jumbo .container h1{
-  font-size: 100px;
-  padding-bottom: 50px;
+  font-size: 80px;
+  padding-bottom: 20px;
 }
 
-.jumbo .container .paragrafo-1{
-  width: 30%;
+.jumbo .jumbotron{
+  display: flex;
+  background-color: bisque;
+  border: 1px solid blue;
+}
+
+
+.jumbo .jumbotron .text{
+  width: 40%;
   text-align: start;
   display: inline-block;
 }
 
-.jumbo .container .jumbotron{
-  max-width: 60%;
-  height: 500px;
-  max-height: 700px;
-  float: right;
+.jumbo .container .jumbotron .image{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .jumbo .container .jumbotron img{
-  height: 400px;
-  width: auto;
+  width: 80%;
 }
 
 /* MAIN */
+main {
+  background-color: blanchedalmond;
+}
 
+main .container{
+  padding: 200px 250px;
+
+}
 
 
 /* FOOTER */
 footer .container{
+  margin-top: 500px;
   padding: 0 100px;
   width: 100%;
   height: 300px;
@@ -109,8 +127,7 @@ footer .container{
 }
 
 footer .contain{
-  height: 80%;
-  background-color: aqua;
+  height: 80%; 
   display: flex;
   flex-direction: row;
 }
@@ -118,7 +135,7 @@ footer .contain{
 footer .menu{
   width: 100%;
   height: 150px;
-  border: 1px solid red;
+  
 }
 
 footer .menu h4{
@@ -133,6 +150,16 @@ footer .menu ul li{
 
 footer .bottom{
   padding: 40px 40px 0;
-  height: 60px;
-  border: 1px solid red;
+  height: 60px; 
+  color: gray;
 }
+
+footer .line{
+  height: 1px;
+  width: 100px;
+  background-color: gray;
+  margin-left: 40px;
+}
+
+
+
