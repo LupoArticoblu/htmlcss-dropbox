@@ -114,10 +114,6 @@ header .menu-2 ul li:last-child{
   font-size: 40px;
 }
 
-.jumbo .text i:active{
-  
-}
-
 .jumbo .container .jumbotron .image{
   height: 100%;
   width: 100%;
@@ -152,12 +148,12 @@ main .contain{
 
 .singolo,
 .team,
-.azienda{
-  
+.azienda,
+.card-center{
   width: 100%;
   background-color: red;
   border: 1px solid blue;
-  padding: 0 25px;
+  padding: 25px 25px;
 }
 
 main .padding{
@@ -202,6 +198,29 @@ main ul.ul-1 li:nth-last-child(2){
 main strong{
   padding: 20px 0;
   display: inline-block;
+}
+
+main .team{
+  border: 1px solid black;
+}
+
+main .contain-card-center{
+  display: flex;
+  justify-content: space-between;
+}
+
+main .btn{
+  display: inline-block;
+  padding: 16px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+main .partner{
+  width: 100%;
+  height: 100px;
+  
 }
 
 /* FOOTER */
