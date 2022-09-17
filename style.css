@@ -13,14 +13,20 @@ ul{
   list-style: none;
 }
 
-/* HEADER */
+ul li{
+  padding-top: 16px;
+}
 
+
+/* HEADER */
 header .head-scroll{
   width: 100%;
   height: 70px;
   background-color: whitesmoke;
   position: fixed;
   z-index: 99;
+  top: 0;
+  left: 0;
 }
 
 header .head-interact{
@@ -64,14 +70,13 @@ header .menu-2 ul li:last-child{
 
 .jumbo{
   padding-top: 70px;
-  height: 70vh;
+  height: 71vh;
   background-color: rgb(155, 185, 241);
 }
 
 .jumbo .container{
-  height: 70px;
-  background-color: bisque;
-  border: 1px solid blue;
+  display: inline-block;
+  height: 220px;
   margin: 50px 300px;
 }
 
@@ -82,15 +87,35 @@ header .menu-2 ul li:last-child{
 
 .jumbo .jumbotron{
   display: flex;
-  background-color: bisque;
-  border: 1px solid blue;
-}
 
+}
 
 .jumbo .jumbotron .text{
   width: 40%;
   text-align: start;
   display: inline-block;
+  position: relative;
+}
+
+.jumbo .jumbotron .bottone{
+  height: 40px;
+  width: 100%;
+  background-color: blue;
+  text-align: center;
+  padding-top: 12px;
+  color: aliceblue;
+  margin: 65px 0;
+}
+
+.jumbo .text i{
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  font-size: 40px;
+}
+
+.jumbo .text i:active{
+  
 }
 
 .jumbo .container .jumbotron .image{
@@ -105,15 +130,79 @@ header .menu-2 ul li:last-child{
 }
 
 /* MAIN */
-main {
-  background-color: blanchedalmond;
+main ul{
+
 }
 
 main .container{
-  padding: 200px 250px;
-
+  padding: 60px 250px;
 }
 
+main .content{
+  height: 90px;
+  width: 100%;
+  background-color: aqua;
+}
+
+main .contain{
+  width: (100% / 3);
+  display: flex;
+  justify-content: center;
+}
+
+.singolo,
+.team,
+.azienda{
+  
+  width: 100%;
+  background-color: red;
+  border: 1px solid blue;
+  padding: 0 25px;
+}
+
+main .padding{
+  margin: 20px 15px;
+}
+
+.contain-singolo,
+.contain-team,
+.contain-azienda{
+  width: 100%;
+  height: 100%; 
+  background-color: aqua;
+  border: 1px solid gray;
+}
+
+main .family{
+  text-align: center;
+  display: block;
+}
+
+main .line{
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+}
+
+main ul.ul-1 li:nth-last-child(2){
+  padding: 16px;
+  background-color: blue;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.underline{
+  padding-bottom: 18px;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+}
+
+main strong{
+  padding: 20px 0;
+  display: inline-block;
+}
 
 /* FOOTER */
 footer .container{
