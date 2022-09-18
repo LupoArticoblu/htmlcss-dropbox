@@ -51,10 +51,16 @@ header .head-interact{
   width: (30% - 100px);
 }
 
+header .menu-1 ul li:first-child:hover{
+  cursor: default;
+  border: none;
+}
+
 header .menu-1 ul li{
   color: black;
   font-weight: lighter;
-  padding: 5px 10px;
+  padding: 5px 10px 12px;
+  cursor: pointer;
 }
 
 .menu-2 ul{
@@ -65,14 +71,23 @@ header .menu-1 ul li{
 header .menu-2 ul li{
   color: black;
   font-weight: lighter;
-  padding: 5px 10px;
+  padding: 5px 10px 20px;
+  cursor: pointer;
+}
+header .menu-2 ul li:hover,
+header .menu-1 ul li:hover{
+  border-bottom: 2px solid;
 }
 
 header .menu-2 ul li:last-child{
   background-color: blue;
   color: whitesmoke;
-  padding: 5px 10px;
   cursor: pointer;
+}
+
+header .menu-2 ul li:last-child:hover{
+  cursor: pointer;
+  border: none;
 }
 
 /* JUMBO */
@@ -144,6 +159,17 @@ main ul li{
   padding: 15px 0;
 }
 
+main .container .content>h2{
+  font-size: 50px;
+  margin: 60px 0;
+}
+
+main .container .content .choise{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
 main .FAQ,
 main .container,
 main .last-container{
@@ -159,6 +185,7 @@ main .contain{
   width: (100% / 3);
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .singolo,
@@ -259,6 +286,7 @@ main .partner{
   display: inline-block;
   padding: 10px;
   border: 1px solid gray;
+  cursor: pointer;
 }
 
 .operation .operate{
@@ -351,6 +379,7 @@ main .last-container>span{
   background-color: #f8f8f8;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 main .container-1 .aside-left,
