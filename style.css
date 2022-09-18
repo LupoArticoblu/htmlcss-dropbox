@@ -13,18 +13,16 @@ body{
   text-align: start;
 }
 
-.debug{
-  background-color: aqua;
-  height:20%;
-  border: 2px solid brown;
-}
-
 ul{
   list-style: none;
 }
 
 ul li{
   padding-top: 16px;
+}
+
+.filter{
+  filter: invert(1);
 }
 
 
@@ -142,7 +140,13 @@ main ul{
   padding: 0;
 }
 
-main .container{
+main ul li{
+  padding: 15px 0;
+}
+
+main .FAQ,
+main .container,
+main .last-container{
   padding: 60px 250px;
 }
 
@@ -193,8 +197,10 @@ main ul.ul-1 li:nth-last-child(2){
   padding: 15px;
   background-color: blue;
   color: white;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .underline{
@@ -227,12 +233,10 @@ main .partner{
   gap: 20px;
   width: 100%;
   height: 700px;
-  background-color: aquamarine;
   padding: 25px;
 }
 
 .partner .image{
-  background-color: yellow;
   width: 60%;
 }
 
@@ -242,9 +246,19 @@ main .partner{
 }
 
 .partner .text{
-  background-color: blueviolet;
-  width: 40%;
+  margin-top: 200px;
+  width: 20%;
   height: 140px;
+}
+
+.partner .text>p{
+  padding: 1em 0;
+}
+
+.partner .text>span{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid gray;
 }
 
 .operation .operate{
@@ -253,6 +267,7 @@ main .partner{
 }
 
 .operation h2{
+  font-size: 50px;
   margin-top: 40px;
 }
 
@@ -260,7 +275,6 @@ main .partner{
   width: calc(100% / 3);
   min-height: 200px;
   max-height: 400px;
-  border: 1px solid red;
   float: left;
   padding-right: 10px;
   max-height: 100%;
@@ -274,11 +288,10 @@ main .partner{
 .operation-card h3,
 .operation-card p{
   max-width: 90%;
-  
+  margin-bottom: 10px;
 }
 
 main .h2{
-  border: 1px solid;
   margin-top: 1000px;
 }
 
@@ -286,9 +299,102 @@ main .a{
   display: block;
   margin: 40px 0;
 }
+
+main .marks{
+  height: 50vh;
+  width: 100%;
+}
+
+main .marks .containers{
+  display: flex;
+  height: 100%;
+}
+
+main .container-1,
+main .container-2,
+main .container-3{
+  width: calc(100% / 3);
+  height: 100%;
+  display: block;
+}
+
+main .container-2{
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+
+.container-2 img{
+  width: 200px;
+}
+
+main .container-2 .line-1{
+  height: 1px;
+  width: 20%;
+  background-color: #e0e0e0;
+  margin: 30px 0;
+}
+
+main .last-container{
+  width: 100%;
+  height: 20vh;
+  background-color: mediumturquoise;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  position: relative;
+}
+
+main .last-container>span{
+  display: flex;
+  width: 30%;
+  height: 60%;
+  background-color: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container-1 .aside-left,
+main .container-3 .aside-right{
+  width: 50%;
+  height: 25vh;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container-1 .aside-left img,
+main .container-3 .aside-right img{
+  width: 50%;
+}
+
+main .aside-left.uf img{
+  max-height: 10%;
+}
+
+.FAQ{
+  margin-top: 300px;
+}
+
+.FAQ h2{
+  margin-bottom: 100px;
+}
+
+main .faq{
+  padding: 50px 0;
+  padding-right: 50px;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .faq:last-child{
+  border-bottom: 1px solid gray;
+}
+
 /* FOOTER */
 footer .container{
-  margin-top: 1400px;
+  margin-top: 200px;
   padding: 0 100px;
   width: 100%;
   height: 450px;
