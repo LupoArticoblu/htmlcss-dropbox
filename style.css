@@ -161,6 +161,7 @@ header .menu-2 ul li:last-child:hover{
 /* MAIN */
 main ul{
   padding: 0;
+  margin-bottom: 10px;
 }
 
 main ul li{
@@ -208,6 +209,10 @@ main .padding{
   margin: 20px 15px;
 }
 
+main .padding>h3{
+  padding: 20px;
+}
+
 .contain-singolo,
 .contain-team,
 .contain-azienda{
@@ -228,24 +233,32 @@ main .line{
   background-color: gray;
 }
 
-main ul.ul-1 li:nth-last-child(2){
+main .btn-card{
   padding: 15px;
   background-color: blue;
   color: white;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
 }
 
+main .btn-card.modify{
+  margin-top: 28px;
+}
+
+.salesnow{
+  margin: 20px;
+}
+
 .underline{
-  padding-bottom: 18px;
+  padding: 30px 0;
   border-bottom: 1px solid gray;
   display: inline-block;
 }
 
 main strong{
-  padding: 20px 0;
+  padding: 20px 20px;
   display: inline-block;
 }
 
