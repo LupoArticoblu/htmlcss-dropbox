@@ -56,6 +56,10 @@ header .menu-1 ul li:first-child:hover{
   border: none;
 }
 
+header .menu-1 img{
+  transform: translate(-20%, -20%);
+}
+
 header .menu-1 ul li{
   color: black;
   font-weight: lighter;
@@ -71,7 +75,7 @@ header .menu-1 ul li{
 header .menu-2 ul li{
   color: black;
   font-weight: lighter;
-  padding: 5px 10px 20px;
+  padding: 4px 10px;
   cursor: pointer;
 }
 header .menu-2 ul li:hover,
@@ -80,9 +84,13 @@ header .menu-1 ul li:hover{
 }
 
 header .menu-2 ul li:last-child{
-  background-color: blue;
   color: whitesmoke;
-  cursor: pointer;
+}
+
+header .menu-2 .start{
+  background-color: blue;
+  padding: 10px;
+  transform: translate(0, -20%);
 }
 
 header .menu-2 ul li:last-child:hover{
@@ -395,6 +403,11 @@ main .container-3 .aside-right{
 main .container-1 .aside-left img,
 main .container-3 .aside-right img{
   width: 50%;
+}
+
+main .container-1 .aside-left:active,
+main .container-3 .aside-right:active{
+  border: 10px solid rgba(255, 255, 255, 0.4);
 }
 
 main .aside-left.uf img{
