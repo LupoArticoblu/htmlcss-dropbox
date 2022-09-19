@@ -354,7 +354,7 @@ main .a{
 }
 
 main .marks{
-  height: 50vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -410,7 +410,7 @@ main .last-container>span{
 main .container-1 .aside-left,
 main .container-3 .aside-right{
   width: 50%;
-  height: 25vh;
+  height: 30vh;
   float: left;
   display: flex;
   justify-content: center;
@@ -431,6 +431,8 @@ main .aside-left.uf img{
   max-height: 10%;
 }
 
+/* section FAQ*/
+
 .FAQ{
   margin-top: 300px;
 }
@@ -449,6 +451,15 @@ main .faq{
 
 main .faq:last-child{
   border-bottom: 1px solid gray;
+}
+
+main .faq .draw{
+  display: none;
+}
+
+
+main .faq .draw:hover{
+  display: block;
 }
 
 /* FOOTER */
