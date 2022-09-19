@@ -30,7 +30,8 @@ ul li{
 header .head-scroll{
   width: 100%;
   height: 70px;
-  background-color: whitesmoke;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -219,7 +220,7 @@ main .padding>h3{
   padding-top: 7px;
   width: 100%;
   height: 100%; 
-  border: 1px solid gray;
+  border: 1px solid whitesmoke;
 }
 
 main .family{
@@ -230,7 +231,7 @@ main .family{
 main .line{
   height: 1px;
   width: 100%;
-  background-color: gray;
+  background-color: whitesmoke;
 }
 
 main .btn-card{
