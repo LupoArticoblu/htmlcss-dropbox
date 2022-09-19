@@ -167,6 +167,7 @@ main ul{
 
 main ul li{
   padding: 15px 0;
+  min-height: 70px;
 }
 
 main .container .content>h2{
@@ -206,6 +207,8 @@ main .contain{
   padding: 25px 25px;
 }
 
+
+
 main .padding{
   margin: 20px 15px;
 }
@@ -244,10 +247,6 @@ main .btn-card{
   cursor: pointer;
 }
 
-main .btn-card.modify{
-  margin-top: 28px;
-}
-
 .salesnow{
   margin: 20px;
 }
@@ -261,6 +260,10 @@ main .btn-card.modify{
 main strong{
   padding: 20px 20px;
   display: inline-block;
+}
+
+main strong.justify{
+  padding: 10px 0 20px;
 }
 
 main .contain-card-center{
