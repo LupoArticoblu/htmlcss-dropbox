@@ -449,8 +449,7 @@ main .faq{
   padding: 50px 0;
   padding-right: 50px;
   border-top: 1px solid gray;
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 main .faq:last-child{
@@ -464,10 +463,11 @@ main .faq .draw{
 }
 
 
-main .faq .draw:hover{
+main .faq:hover .draw{
   display: block;
   height: 30px;
-  width: 100%;
+  width: 95%;
+  margin: 10px auto;
 }
 
 /* FOOTER */
