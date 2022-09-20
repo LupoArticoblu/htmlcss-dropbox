@@ -280,6 +280,13 @@ main .btn{
   cursor: pointer;
 }
 
+header .start:hover,
+.jumbo .bottone:hover,
+main .btn:hover, 
+.btn-card:hover{
+  background-color: steelblue
+}
+
 main .partner{
   display: flex;
   gap: 20px;
